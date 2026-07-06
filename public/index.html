@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>合肥拆除 · 官方避坑说明</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap');
+
+    * { font-family: 'Noto Sans SC', sans-serif; }
+
+    body {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    .swiper {
+      width: 100%;
+      max-width: 380px;
+      height: 520px;
+      padding-top: 20px;
+      padding-bottom: 40px;
+    }
+
+    .swiper-slide {
+      border-radius: 24px;
+      background: #fff;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-header {
+      padding: 24px 24px 16px;
+      border-bottom: 2px solid #f0f0f0;
+    }
+
+    .card-body {
+      padding: 20px 24px;
+      flex: 1;
+      overflow-y: auto;
+      font-size: 15px;
+      line-height: 1.8;
+      color: #444;
+      white-space: pre-line;
+    }
+
+    .card-cover {
+      background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
+      color: white;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card-cover .card-header {
+      border-bottom: none;
+      text-align: center;
+    }
+
+    .card-cover .card-body {
+      color: rgba(255,255,255,0.95);
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .card-ending {
+      background: linear-gradient(135deg, #2D2D2D 0%, #1a1a2e 100%);
+      color: white;
+    }
+
+    .card-ending .card-header {
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .card-ending .card-body {
+      color: rgba(255,255,255,0.9);
+    }
+
+    .tag-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 500;
+      margin: 4px 4px 0 0;
+    }
+
+    .tag-orange { background: #FFF3E0; color: #E65100; }
+    .tag-blue { background: #E3F2FD; color: #1565C0; }
+    .tag-green { background: #E8F5E9; color: #2E7D32; }
+
+    .swiper-pagination-bullet {
+      background: rgba(255,255,255,0.5);
+      width: 8px;
+      height: 8px;
+    }
+    .swiper-pagination-bullet-active {
+      background: #FF6B35;
+      width: 20px;
+      border-radius: 4px;
+    }
+
+    .page-indicator {
+      position: absolute;
+      top: 10px;
+      right: 16px;
+      background: rgba(0,0,0,0.6);
+      color: white;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      z-index: 10;
+    }
+
+    .cta-btn {
+      background: linear-gradient(90deg, #FF6B35, #F7931E);
+      box-shadow: 0 4px 15px rgba(255,107,53,0.4);
+      transition: all 0.3s ease;
+    }
+    .cta-btn:active {
+      transform: scale(0.96);
+    }
+
+    /* 自定义滚动条 */
+    .card-body::-webkit-scrollbar { width: 4px; }
+    .card-body::-webkit-scrollbar-track { background: transparent; }
+    .card-body::-webkit-scrollbar-thumb { background: #ddd; border-radius: 2px; }
+
+    /* 卡片水印 */
+    .card-watermark {
+      position: absolute;
+      bottom: 12px;
+      right: 16px;
+      font-size: 12px;
+      color: rgba(0,0,0,0.15);
+      font-weight: 500;
+      letter-spacing: 1px;
+      pointer-events: none;
+      z-index: 5;
+    }
+    .card-cover .card-watermark,
+    .card-ending .card-watermark {
+      color: rgba(255,255,255,0.25);
+    }
+  </style>
+</head>
+<body class="flex flex-col items-center justify-between">
+
+  <!-- 顶部 Header -->
+  <header class="w-full text-center pt-6 pb-2 px-4">
+    <div class="flex items-center justify-center gap-2 mb-1">
+      <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center">
+        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+        </svg>
+      </div>
+      <h1 class="text-white text-lg font-bold tracking-wide">合肥拆除 · 官方避坑说明</h1>
+    </div>
+    <p class="text-white/50 text-xs">👈 左右滑动查看卡片 👉</p>
+  </header>
+
+  <!-- Swiper 卡片区域 -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper" id="cardWrapper">
+      <!-- 卡片由 JS 动态生成 -->
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- 底部 CTA -->
+  <footer class="w-full px-6 pb-6 pt-2">
+    <button onclick="showContact()" class="cta-btn w-full py-3.5 rounded-2xl text-white font-bold text-base flex items-center justify-center gap-2">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+      </svg>
+      我想要 · 极速报价
+    </button>
+    <p class="text-center text-orange-300/80 text-sm mt-2 font-medium">📞 电话/微信同号：13855159932</p>
+    <p class="text-center text-white/30 text-xs mt-1">先干活 · 验收后付款 · 合肥本地</p>
+  </footer>
+
+  <!-- 联系弹窗 -->
+  <div id="contactModal" class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50 px-6">
+    <div class="bg-white rounded-2xl p-6 w-full max-w-sm text-center">
+      <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+        <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+        </svg>
+      </div>
+      <h3 class="text-lg font-bold text-gray-800 mb-2">联系咨询</h3>
+      <p class="text-gray-500 text-sm mb-2">电话/微信同号</p>
+      <p class="text-2xl font-black text-orange-500 font-mono mb-4">13855159932</p>
+      <div class="bg-gray-100 rounded-xl p-4 mb-4">
+        <p class="text-xs text-gray-400">添加微信备注「拆除」优先通过</p>
+      </div>
+      <button onclick="hideContact()" class="w-full py-3 bg-gray-100 rounded-xl text-gray-700 font-medium">关闭</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    // 加载 FAQ 数据
+    async function loadCards() {
+      const res = await fetch('/api/faq');
+      const data = await res.json();
+      const wrapper = document.getElementById('cardWrapper');
+
+      data.forEach((item, index) => {
+        const slide = document.createElement('div');
+        slide.className = 'swiper-slide';
+
+        // 判断特殊卡片类型
+        const isCover = item.id === 1;
+        const isEnding = item.id === 14;
+
+        const watermark = '<div class="card-watermark">📞 13855159932</div>';
+
+        if (isCover) {
+          slide.classList.add('card-cover');
+          slide.innerHTML = `
+            <div class="page-indicator">${index + 1}/${data.length}</div>
+            <div class="flex-1 flex flex-col items-center justify-center px-8">
+              <div class="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mb-6">
+                <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                </svg>
+              </div>
+              <h2 class="text-2xl font-black mb-4">${item.question}</h2>
+              <div class="card-body !text-white/90 !px-0">${escapeHtml(item.answer)}</div>
+              <div class="flex gap-2 mt-6">
+                <span class="tag-badge bg-white/20 text-white">不玩套路</span>
+                <span class="tag-badge bg-white/20 text-white">先干活后付款</span>
+                <span class="tag-badge bg-white/20 text-white">合肥本地</span>
+              </div>
+            </div>
+            ${watermark}
+          `;
+        } else if (isEnding) {
+          slide.classList.add('card-ending');
+          slide.innerHTML = `
+            <div class="page-indicator">${index + 1}/${data.length}</div>
+            <div class="card-header">
+              <h2 class="text-xl font-bold text-white">${item.question}</h2>
+            </div>
+            <div class="card-body !text-white/85">${escapeHtml(item.answer)}</div>
+            <div class="px-6 pb-6">
+              <div class="border-t border-white/20 pt-4 text-center">
+                <p class="text-white/60 text-sm">📍 合肥 · 拆除服务</p>
+              </div>
+            </div>
+            ${watermark}
+          `;
+        } else {
+          slide.innerHTML = `
+            <div class="page-indicator">${index + 1}/${data.length}</div>
+            <div class="card-header">
+              <h2 class="text-lg font-bold text-gray-800 leading-snug">${escapeHtml(item.question)}</h2>
+            </div>
+            <div class="card-body">${escapeHtml(item.answer)}</div>
+            ${watermark}
+          `;
+        }
+
+        wrapper.appendChild(slide);
+      });
+
+      // 初始化 Swiper
+      new Swiper('.mySwiper', {
+        effect: 'cards',
+        cardsEffect: {
+          perSlideOffset: 10,
+          perSlideRotate: 4,
+          slideShadows: true,
+        },
+        grabCursor: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        initialSlide: 0,
+      });
+    }
+
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    function showContact() {
+      document.getElementById('contactModal').classList.remove('hidden');
+      document.getElementById('contactModal').classList.add('flex');
+    }
+
+    function hideContact() {
+      document.getElementById('contactModal').classList.add('hidden');
+      document.getElementById('contactModal').classList.remove('flex');
+    }
+
+    loadCards();
+  </script>
+</body>
+</html>
